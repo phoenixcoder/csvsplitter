@@ -50,23 +50,11 @@ bool FileExists(string& FilePath, ifstream& InputFile) {
 }
 
 int main() {
-	/*	 ofstream myfile;
-	 ifstream myinfile;
-	 myfile.open("example.txt");
-	 myfile << "Writing this to a file.\n";
-	 myfile.close();
-
-	 myfile.open("example1.txt");
-	 myfile << "Writing to another file.\n";
-	 myfile.close();*/
-//string buffer[25];
 	int lineNumbers;
 	if (LinesValidation(lineNumbers)) {
 		string filepath;
 		ifstream myinfile;
 		if (FileExists(filepath, myinfile)) {
-			//myinfile.open("Horace_Rec_Descriptor.csv");
-
 			int i = 0;
 			int fileNum = 0;
 			string filename;
